@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #493d9e; /* Deep Purple */
+  color: white;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(161, 227, 249, 0.2); /* Light Cyan Glow */
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #a1e3f9; /* Light Cyan */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a1e3f9; /* Light Cyan Hover */
+}
+
+/* Hero Section */
+header {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #a1e3f9, #493d9e); /* Cyan to Purple */
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+  padding: 30px;
+}
+
+/* Search Section */
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+select,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+select {
+  width: 280px;
+  background: white;
+  color: black;
+}
+
+button {
+  background: #a1e3f9; /* Light Cyan */
+  color: #493d9e; /* Deep Purple */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #72cbe1;
+}
+
+/* Loader */
+.loader {
+  border: 5px solid white;
+  border-top: 5px solid #a1e3f9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Output Section */
+.output {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(161, 227, 249, 0.2);
+}
+
+
+.map {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}

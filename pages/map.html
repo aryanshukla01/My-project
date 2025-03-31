@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petrol Pumps in Delhi</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/map.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">Fuel Tracker</div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./fule.html">Fuel Prices</a></li>
+        <li><a href="./map.html">Petrol Pumps</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./login.html">SignOut</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <h1>View Petrol Pumps on Map</h1>
+      <p>Check the locations of 15 Indian Oil Petrol Pumps in Delhi.</p>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Map Section -->
+      <section id="map" class="map"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fuel Tracker. All Rights Reserved.</p>
+    </footer>
+    <script src="../js/petrolData.js"></script>
+    <script src="../js/map.js"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQaae9Pwc5eqhXx-MlkctlTa__4rqzb0M&callback=initMap" async defer></script>
+  </body>
+</html>
